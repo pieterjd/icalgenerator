@@ -37,6 +37,8 @@
                 <div class="form-group">
                     <label for="timeInput">Time</label>
                     <input type="time" id="timeInput" name="time" min="09:00" max="18:00" value="09:00" th:field="*{time}" required/>
+                    <label for="durationInput">Duration (in minutes)</label>
+                    <input type="number" id="durationInput" name="durationInput" min="1" step="1" th:field="*{duration}" required/>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>

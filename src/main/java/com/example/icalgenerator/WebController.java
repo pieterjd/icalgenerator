@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.io.IOException;
-import java.time.LocalTime;
 
 @Controller
 public class WebController {
@@ -22,7 +21,6 @@ public class WebController {
     @GetMapping
     public String index(Model model){
         DateFormSubmission submission = new DateFormSubmission();
-        submission.setTime(LocalTime.NOON);
         model.addAttribute("submission",submission);
         return "index";
     }

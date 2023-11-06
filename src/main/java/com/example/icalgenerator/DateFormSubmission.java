@@ -1,10 +1,6 @@
 package com.example.icalgenerator;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class DateFormSubmission {
     public String getDates() {
@@ -31,8 +27,18 @@ public class DateFormSubmission {
         this.description = description;
     }
 
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
     private String dates;
-    private LocalTime time;
+    private LocalTime time = LocalTime.NOON;
 
     private String description;
+
+    private int duration = 60;
 }
